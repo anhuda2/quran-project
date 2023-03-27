@@ -1,11 +1,22 @@
-import Vue from 'vue';
-import App from './App.vue';
-import firebase from './firebase';
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
 
-firebase.database().ref('test').set('Hello, world!');
+// Import Quranic verse components
+import QuranLayout from '@/components/QuranLayout.vue'
+import QuranicVerse from '@/components/QuranicVerse.vue'
+import RealTimeReading from '@/components/RealTimeReading.vue'
+import Bookmark from '@/components/Bookmark.vue'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
+
+// Register Quranic verse components globally
+Vue.component('quran-layout', QuranLayout)
+Vue.component('quranic-verse', QuranicVerse)
+Vue.component('realtime-reading', RealTimeReading)
+Vue.component('bookmark', Bookmark)
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app');
+  router,
+  render: h => h(App)
+}).$mount('#app')
