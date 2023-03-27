@@ -1,9 +1,9 @@
 <template>
-    <div class="bookmark">
-        <div class="bookmark-header">
+    <div class="bookmarks">
+        <div class="bookmarks-header">
             <h3>{{ title }}</h3>
         </div>
-        <div class="bookmark-content">
+        <div class="bookmarks-content">
             <div v-for="(bookmark, index) in bookmarks" :key="index">
                 <p>{{ bookmark.surah }}:{{ bookmark.verse }}</p>
                 <button @click="removeBookmark(bookmark.id)">Remove</button>
@@ -16,7 +16,7 @@
     import firebase from '@/firebase.js';
 
     export default {
-      name: 'Bookmark',
+      name: 'Bookmarks',
       props: {
         title: {
           type: String,
@@ -98,17 +98,17 @@
     };
 </script>
 <style scoped>
-    .bookmark {
+    .bookmarks {
         border: 1px solid #ccc;
         margin: 10px;
         padding: 10px;
     }
 
-    .bookmark-header {
+    .bookmarks-header {
         margin-bottom: 10px;
     }
 
-    .bookmark-content {
+    .bookmarks-content {
         display: flex;
         flex-direction: column;
         align-items: center;

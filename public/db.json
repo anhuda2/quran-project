@@ -1,0 +1,24 @@
+{
+    "bookmarks" : {
+      "-M-IKj-Ffz1QGmWE-fVi" : {
+        "verseIndex" : 1,
+        "surahName" : "Al-Fatihah",
+        "verseNumber" : 1,
+        "userId" : "user123"
+      },
+      "-M-IQcJhBj6jzUZJjK6" : {
+        "verseIndex" : 9,
+        "surahName" : "Al-Fatihah",
+        "verseNumber" : 7,
+        "userId" : "user123"
+      }
+    },
+    "readings" : {
+      "current" : {
+        "name" : "John Doe",
+        "surah" : "Al-Baqarah",
+        "verse" : 23
+      }
+    }
+  }
+  
