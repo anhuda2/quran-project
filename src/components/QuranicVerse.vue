@@ -1,3 +1,5 @@
+import firebase from '@/firebase.js';
+
 <template>
     <div class="quranic-verse">
       <div class="verse-header">

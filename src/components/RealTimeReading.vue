@@ -1,3 +1,5 @@
+import firebase from '@/firebase.js';
+
 <template>
     <div class="realtime-reading">
       <div class="reading-info">
